@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("");
+        BmiService service = new BmiService();
+
+        double bodyMaxIndex = service.calculate(45, 155);
+
+        System.out.println(bodyMaxIndex);
     }
 }
